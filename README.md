@@ -8,7 +8,7 @@ Estou em constante evolução, explorando novas tecnologias e aprimorando minhas
 ## 🧑‍💻 Sobre mim
 
 - 🔭 Foco em **desenvolvimento Backend com Python**
-- 📚 Sempre aprendendo — atualmente estudando Python, SQL e GenAI
+- 📚 Sempre aprendendo — atualmente estudando Python, SQL e Cloud AWS
 - 🎯 Objetivo: crescer como desenvolvedor e contribuir em projetos reais
 - 🌎 Brasil
 

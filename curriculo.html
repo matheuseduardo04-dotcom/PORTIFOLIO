@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculo | Matheus Eduardo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    :root {
+      --bg: #060a0e;
+      --surface: #0d1117;
+      --border: #1a2332;
+      --accent: #00ff88;
+      --accent-2: #00cfff;
+      --text: #e6f0ff;
+      --muted: #7b90ae;
+      --mono: "Space Mono", monospace;
+      --display: "Syne", sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top right, rgba(0, 207, 255, 0.08), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(0, 255, 136, 0.06), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--display);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cv-header {
+      width: 100%;
+      max-width: 900px;
+      padding: 2rem 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cv-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: var(--accent-2);
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .cv-back:hover { color: var(--accent); }
+
+    .cv-title {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .cv-container {
+      width: 100%;
+      max-width: 900px;
+      padding: 1rem 1.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .cv-page {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    }
+
+    .cv-page img {
+      width: 100%;
+      display: block;
+    }
+
+    @media (max-width: 620px) {
+      .cv-header { padding: 1.5rem 1rem 0.75rem; }
+      .cv-container { padding: 0.75rem 1rem 2rem; gap: 1.25rem; }
+      .cv-title { font-size: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="cv-header">
+    <a class="cv-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      Voltar
+    </a>
+    <span class="cv-title">// curriculo</span>
+  </header>
+
+  <main class="cv-container">
+    <div class="cv-page">
+      <img src="assets/curriculo-p1.png" alt="Curriculo - Pagina 1" loading="eager">
+    </div>
+    <div class="cv-page">
+      <img src="assets/curriculo-p2.png" alt="Curriculo - Pagina 2" loading="eager">
+    </div>
+  </main>
+</body>
+</html>

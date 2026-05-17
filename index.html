@@ -1,568 +1,749 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="description"
-    content="Portfólio de Matheus Eduardo, desenvolvedor Back-End focado em Python, SQL, automacao e IA."
-  >
-  <title>Matheus Eduardo | Back-End Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;600;700;800&amp;display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Eduardo — Backend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a class="nav-logo" href="#hero">MATHEUS</a>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#tech">Stack</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="blob-container">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
 
-  <main class="wrapper">
-    <section id="hero" class="section hero">
-      <div class="hero-tag">Back-End Developer</div>
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1 class="hero-name">
-            Matheus
-            <span>Eduardo</span>
-          </h1>
-          <p class="hero-role">
-            <span id="typed-text"></span>
-            <span class="cursor" aria-hidden="true"></span>
-          </p>
-          <p class="hero-desc">
-            Desenvolvedor Back-End movido pela curiosidade de entender como sistemas pensam,
-            processam e decidem. Mergulho fundo em <strong>lógica de programação</strong>,
-            exploro <strong>análise de dados</strong>, construo <strong>automações</strong>
-            e sigo estudando <strong>Cloud AWS</strong> para entender fundamentos em nuvem.
-            
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Ver projetos</a>
-            <a class="button button-secondary" href="#contact">Entrar em contato</a>
-            <a class="button button-cv" href="curriculo.html" target="_blank" rel="noopener noreferrer">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-              Open CV
-            </a>
-          </div>
-        </div>
+<nav>
+  <div class="nav-icons">
+    <a href="https://github.com/matheuseduardo04-dotcom" target="_blank" title="GitHub">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0/" target="_blank" title="LinkedIn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+  </div>
 
-        <aside class="hero-media" aria-label="Foto de Matheus Eduardo">
-          <div class="hero-photo-frame">
-            <div class="hero-photo-stack">
-              <img
-                class="hero-photo hero-photo-main"
-                src="assets/foto-1.jpg"
-                alt="Foto de Matheus Eduardo"
-                loading="eager"
-                decoding="async"
-              >
-              <img
-                class="hero-photo hero-photo-glitch hero-photo-glitch-red"
-                src="assets/foto-1.jpg"
-                alt=""
-                aria-hidden="true"
-              >
-              <img
-                class="hero-photo hero-photo-glitch hero-photo-glitch-cyan"
-                src="assets/foto-1.jpg"
-                alt=""
-                aria-hidden="true"
-              >
-            </div>
-            <div class="hero-photo-scan" aria-hidden="true"></div>
-            <div class="hero-photo-noise" aria-hidden="true"></div>
-          </div>
-          <p class="hero-photo-caption">sinal estabilizado</p>
-        </aside>
-      </div>
-    </section>
+  <ul class="nav-links">
+    <li><a href="#inicio" class="active" data-i18n="nav.home">Início</a></li>
+    <li><a href="#sobre" data-i18n="nav.about">Sobre mim</a></li>
+    <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+    <li><a href="#curriculo" data-i18n="nav.cv">Currículo</a></li>
+    <li><a href="#certificados" data-i18n="nav.certs">Certificados</a></li>
+    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+  </ul>
 
-    <section id="about" class="section">
-      <div class="section-label">// 01. sobre mim</div>
-      <div class="section-line"></div>
-      <h2 class="section-title">Quem sou eu</h2>
-
-      <div class="about-text">
-        <p>
-          Olá! Sou <strong>Matheus Eduardo</strong>, desenvolvedor Back-End em constante
-          evolucão. Busco conhecimento em múltiplas tecnologias, combinando a graduacao na
-          <strong>UNICIVE</strong> com cursos especializados.
-        </p>
-        <p>
-          Tenho me dedicado em certificações e estudos no <strong>FreeCodeCamp, com curso de
-          Python</strong> e <strong>SQL pelo Curso em Video</strong>, sempre com foco em construir
-          soluções mais inteligentes, práticas e organizadas.
-        </p>
-        <p>
-          Atualmente também aprofundo meus estudos em <strong>Git &amp; GitHub</strong>,
-          porque código bom também precisa ser versionado, colaborativo e bem cuidado.
-        </p>
-      </div>
-
-      <div class="stats-grid">
-        <article class="stat-card reveal-card">
-          <div class="stat-number">7</div>
-          <div class="stat-label">Projetos</div>
-        </article>
-        <article class="stat-card reveal-card">
-          <div class="stat-number">+500</div>
-          <div class="stat-label">Conexões</div>
-        </article>
-        <article class="stat-card reveal-card">
-          <div class="stat-number">4</div>
-          <div class="stat-label">Tecnologias</div>
-        </article>
-        <article class="stat-card reveal-card">
-          <div class="stat-number">∞</div>
-          <div class="stat-label">Aprendizado</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="tech" class="section">
-      <div class="section-label">// 02. tecnologias</div>
-      <div class="section-line"></div>
-      <h2 class="section-title">Stack em foco</h2>
-
-      <div class="tech-grid">
-        <article class="tech-card reveal-card">
-          <div class="tech-icon">
-            <svg viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="pyTop" x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%">
-                  <stop offset="0%" stop-color="#387EB8"></stop>
-                  <stop offset="100%" stop-color="#366994"></stop>
-                </linearGradient>
-                <linearGradient id="pyBot" x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%">
-                  <stop offset="0%" stop-color="#FFE052"></stop>
-                  <stop offset="100%" stop-color="#FFC331"></stop>
-                </linearGradient>
-              </defs>
-              <path fill="url(#pyTop)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zm-34.74 19.978a11.56 11.56 0 0 1 11.573 11.573 11.56 11.56 0 0 1-11.573 11.572 11.56 11.56 0 0 1-11.572-11.572A11.56 11.56 0 0 1 92.176 20.05z"></path>
-              <path fill="url(#pyBot)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.74-19.978a11.56 11.56 0 0 1-11.573-11.572 11.56 11.56 0 0 1 11.573-11.573 11.56 11.56 0 0 1 11.572 11.573 11.56 11.56 0 0 1-11.572 11.572z"></path>
-            </svg>
-          </div>
-          <div>
-            <div class="tech-name">Python</div>
-            <div class="tech-desc">Automação de tarefas, desenvolvimento de APIs e análise de dados com Python.</div>
-            <span class="tech-badge">Principal</span>
-          </div>
-        </article>
-
-        <article class="tech-card reveal-card">
-          <div class="tech-icon">
-            <img src="assets/postgre.png" alt="PostgreSQL" loading="lazy" decoding="async">
-          </div>
-          <div>
-            <div class="tech-name">PostgreSQL</div>
-            <div class="tech-desc">Modelagem de bancos relacionais, criação de consultas SQL, análise e manipulação de dados com PostgreSQL.</div>
-            <span class="tech-badge">Estudando</span>
-          </div>
-        </article>
-
-        <article class="tech-card reveal-card">
-          <div class="tech-icon">
-            <svg viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path fill="#F05032" d="M90.156 41.965L50.036 1.848a5.918 5.918 0 00-8.37 0L33.25 10.26l10.57 10.57a7.027 7.027 0 018.887 8.948l10.184 10.184a7.028 7.028 0 11-4.218 4.02L48.544 33.863v26.561a7.03 7.03 0 11-5.772-.172V33.398a7.029 7.029 0 01-3.817-9.23L28.438 13.629 1.845 40.221a5.92 5.92 0 000 8.372l40.12 40.116a5.92 5.92 0 008.37 0l39.82-39.818a5.924 5.924 0 000-8.926"></path>
-            </svg>
-          </div>
-          <div>
-            <div class="tech-name">Git</div>
-            <div class="tech-desc">Controle de versão, histórico de mudanças e organização do código com Git.</div>
-            <span class="tech-badge">Estudando</span>
-          </div>
-        </article>
-
-
-        <article class="tech-card reveal-card">
-          <div class="tech-icon">
-            <img src="assets/cloud.jpg" alt="AWS Cloud" loading="lazy" decoding="async">
-          </div>
-          <div>
-            <div class="tech-name">AWS Cloud</div>
-            <div class="tech-desc">Fundamentos de computação em nuvem e exploração de serviços da AWS.</div>
-            <span class="tech-badge">Estudando</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-label">// 03. projetos</div>
-      <div class="section-line"></div>
-      <h2 class="section-title">PROJETOS EM DESTAQUES</h2>
-
-      <div class="projects-grid">
-        <a
-          href="https://github.com/matheuseduardo04-dotcom"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">01 - PROJETO</div>
-          <h3 class="project-title">Automação de Tarefas e BOTS</h3>
-          <p class="project-desc">
-            Scripts para automação de tarefas repetitivas, otimizando processos e
-            aumentando produtividade.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Automação</span>
-            <span class="tag">Scripts</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/matheuseduardo04-dotcom/automacao-python"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">02 - PROJETO</div>
-          <h3 class="project-title">Modelo Preditivo de Crédito</h3>
-          <p class="project-desc">
-            IA para previsão de score de crédito. Análise de dados com Pandas, treinamento de modelos com Scikit-learn (Random Forest 83% acurácia). Automação de previsões para novos clientes.
-
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Dados</span>
-            <span class="tag">IA</span>
-            <span class="tag">Automação</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/matheuseduardo04-dotcom"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">03 - PROJETO</div>
-          <h3 class="project-title">Bot TikTok</h3>
-          <p class="project-desc">
-            Automação de curtidas no TikTok utilizando PyAutoGUI para simular interações
-            e otimizar engajamento de forma automática.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyAutoGUI</span>
-            <span class="tag">Automação</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/matheuseduardo04-dotcom"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">04 - PROJETO</div>
-          <h3 class="project-title"> Resumidor de Vídeos do YouTube</h3>
-          <p class="project-desc">
-            Você cola a url do vídeo e recebe um resumo estruturado com pontos principais.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">FastAPI</span>
-  
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-        <a
-          href="https://github.com/matheuseduardo04-dotcom/http-server-python"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">05 - PROJETO</div>
-          <h3 class="project-title">Servidor HTTP do Zero</h3>
-          <p class="project-desc">
-            O navegador manda um pedido → meu código lê → processa → devolve a página.
-            Sem mágica, sem abstração. Servidor HTTP construído do zero.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-        <a
-          href="https://github.com/matheuseduardo04-dotcom/MARVELxDC"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">06 - PROJETO</div>
-          <h3 class="project-title">Marvel × DC</h3>
-          <p class="project-desc">
-            Site fullstack para explorar heróis da Marvel e DC. Busca em português e inglês, batalhas épicas com narração por IA e quiz de trivia gerado dinamicamente.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-        <a
-          href="https://github.com/matheuseduardo04-dotcom/minidb-python"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card reveal-card"
-        >
-          <div class="project-num">07 - PROJETO</div>
-          <h3 class="project-title">Mini Banco de Dados Chave-Valor (estilo SQLite)</h3>
-          <p class="project-desc">
-            Banco de dados chave-valor com formato binário próprio (cabeçalho MINIDB01) inspirado no SQLite. CLI interativa com indicador de alterações pendentes + interface web em Flask, ambas compartilhando o mesmo arquivo .db.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">SQLite-style</span>
-            <span class="tag">CLI</span>
-          </div>
-          <div class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            Ver no GitHub
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section-label">// 04. contato</div>
-      <div class="section-line"></div>
-
-      <div class="contact-inner">
-        <h2 class="contact-title">Vamos conversar?</h2>
-        <p class="contact-sub">Disponivel para oportunidades e conexoes na area</p>
-
-        <div class="social-links">
-          <a
-            href="https://wa.me/5543996353642"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link reveal-card"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
-            </svg>
-            WhatsApp
-          </a>
-
-          <a
-            href="https://github.com/matheuseduardo04-dotcom"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link reveal-card"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
-            </svg>
-            GitHub
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link reveal-card"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="current-year">2026</span> Matheus Eduardo - Todos os direitos reservados</p>
-    <div class="footer-status">
-      <div class="status-dot"></div>
-      Disponivel para oportunidades
+  <div class="nav-right">
+    <div class="lang-toggle" id="lang-toggle" role="button" tabindex="0" aria-label="Alternar idioma">
+      <span id="lang-pt" style="opacity:1;">PT</span>
+      <div class="toggle-pill" id="toggle-pill"></div>
+      <span id="lang-en" style="opacity:0.4;">EN</span>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <script>
-    document.body.classList.add('js-enabled');
+<section class="hero" id="inicio">
+  <div class="avatar-wrapper">
+    <div class="avatar-ring"></div>
+<div class="avatar-inner" style="padding:0;overflow:hidden;"><img src="assets/foto-matheus.jpg" alt="Matheus Eduardo" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;"></div>
+  </div>
 
-    const currentYear = document.getElementById('current-year');
-    if (currentYear) {
-      currentYear.textContent = new Date().getFullYear();
-    }
+  <div class="hello-badge">
+    <span class="badge">HELLO</span>
+    <span class="im" data-i18n="hero.im">I'm</span>
+  </div>
 
-    const typedText = document.getElementById('typed-text');
-    const phrases = [
-      'Python Developer',
-      'Back-End Engineer',
-      'SQL Enthusiast',
-      'Gen AI Explorer',
-      'Problem Solver',
-    ];
+  <h1>Matheus Eduardo</h1>
 
-    if (typedText) {
-      let phraseIndex = 0;
-      let charIndex = 0;
-      let deleting = false;
+  <div class="title-bracket" id="title-bracket">
+    <div class="bracket-frame" id="bracket-frame">
+      <span class="corner-tr"></span>
+      <span class="corner-bl"></span>
+    </div>
+    <span class="title-ghost" id="word-fullstack">Backend</span>
+    <span class="title-main" id="word-developer" data-i18n="hero.developer">Developer</span>
+  </div>
 
-      const typeLoop = () => {
-        const phrase = phrases[phraseIndex];
+  <a href="#projetos" class="cta-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6"/>
+      <polyline points="8 6 2 12 8 18"/>
+    </svg>
+    <span data-i18n="hero.cta">Ver Projetos</span>
+  </a>
 
-        if (deleting) {
-          charIndex -= 1;
-        } else {
-          charIndex += 1;
-        }
+  <div class="scroll-arrow">↓</div>
+</section>
 
-        typedText.textContent = phrase.slice(0, charIndex);
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-set">
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">MongoDB</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">AWS</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</span><span class="ticker-sep">·</span>
+    </div>
+    <!-- duplicado para loop infinito -->
+    <div class="ticker-set" aria-hidden="true">
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">MongoDB</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">AWS</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git</span><span class="ticker-sep">·</span>
+      <span class="ticker-item"><img class="ticker-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</span><span class="ticker-sep">·</span>
+    </div>
+  </div>
+</div>
 
-        if (!deleting && charIndex === phrase.length) {
-          deleting = true;
-          setTimeout(typeLoop, 1800);
-          return;
-        }
+<!-- ABOUT SECTION -->
+<section id="sobre">
+  <div class="about-section">
+    <p class="about-label" data-i18n="about.label">SOBRE</p>
+    <h2 class="about-title" data-i18n="about.title">Sobre mim</h2>
+    <p class="about-desc" data-i18n-html="about.desc">Sou <strong>Matheus Eduardo</strong>, desenvolvedor Back-End em constante evolução. Combino a graduação na <strong>UNICIVE</strong> com cursos especializados em <strong>Python, SQL e automação com IA</strong>, focado em construir soluções inteligentes, práticas e organizadas.</p>
 
-        if (deleting && charIndex === 0) {
-          deleting = false;
-          phraseIndex = (phraseIndex + 1) % phrases.length;
-        }
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-num">1</span>
+        <span class="stat-label" data-i18n="about.stats.years">Ano estudando programação</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">10+</span>
+        <span class="stat-label" data-i18n="about.stats.projects">Projetos desenvolvidos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">8+</span>
+        <span class="stat-label" data-i18n="about.stats.stack">Tecnologias na stack</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">100%</span>
+        <span class="stat-label" data-i18n="about.stats.dedication">Dedicação e evolução contínua</span>
+      </div>
+    </div>
 
-        setTimeout(typeLoop, deleting ? 55 : 95);
-      };
+    <div class="about-grid">
+      <!-- LEFT: Skills -->
+      <div class="skills-card">
+        <div class="skills-card-head">
+          <div class="skills-card-copy">
+            <div class="skills-card-title" data-i18n="about.skills.title">Experiência</div>
+            <div class="skills-card-sub" data-i18n="about.skills.sub">Desenvolvedor Backend em formação, com atuação orientada por produto, organização técnica e evolução constante.</div>
+          </div>
+          <div class="skills-card-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.2 6.48 7.15 1.04-5.17 5.04 1.22 7.12L12 18.27 5.6 21.68l1.22-7.12L1.65 9.52 8.8 8.48 12 2z"/>
+            </svg>
+          </div>
+        </div>
 
-      setTimeout(typeLoop, 700);
-    }
+        <div class="skills-highlights">
+          <span class="skills-highlight" data-i18n="about.highlights.frontend">Frontend moderno</span>
+          <span class="skills-highlight" data-i18n="about.highlights.backend">Backend escalável</span>
+          <span class="skills-highlight" data-i18n="about.highlights.ai">Automações com IA</span>
+        </div>
 
-    const revealCards = document.querySelectorAll('.reveal-card');
-    if ('IntersectionObserver' in window && revealCards.length > 0) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.14 }
-      );
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.backend">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
 
-      revealCards.forEach((card) => observer.observe(card));
-    } else {
-      revealCards.forEach((card) => card.classList.add('is-visible'));
-    }
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.database">Banco de Dados</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
 
-    const canvas = document.getElementById('matrix-canvas');
-    const context = canvas ? canvas.getContext('2d') : null;
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.devops">DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+          </div>
+        </div>
 
-    if (canvas && context) {
-      const chars = 'PYTHONSQLGENAIABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&{}[]<>/\\\\~';
-      let fontSize = window.innerWidth < 480 ? 12 : 15;
-      let columns = 0;
-      let drops = [];
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.docs">Versionamento</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
 
-      const resizeCanvas = () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        fontSize = window.innerWidth < 480 ? 12 : 15;
-        columns = Math.floor(canvas.width / fontSize);
-        drops = Array.from({ length: columns }, () => Math.random() * -(canvas.height / fontSize));
-      };
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.agile">Metodologias Ágeis</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">Kanban</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Trello</span>
+          </div>
+        </div>
 
-      const drawMatrix = () => {
-        context.fillStyle = 'rgba(6, 10, 14, 0.18)';
-        context.fillRect(0, 0, canvas.width, canvas.height);
-        context.font = `bold ${fontSize}px "Space Mono", monospace`;
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="about.skills.languages">Idiomas</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Basic English</span>
+          </div>
+        </div>
+      </div>
 
-        for (let index = 0; index < columns; index += 1) {
-          const char = chars[Math.floor(Math.random() * chars.length)];
-          const random = Math.random();
+      <!-- RIGHT: professional photo showcase -->
+      <div class="about-right">
+        <div class="photo-showcase">
+          <div class="rotating-circle" aria-hidden="true">
+            <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <path id="circlePath" d="M 90,90 m -68,0 a 68,68 0 1,1 136,0 a 68,68 0 1,1 -136,0"/>
+              </defs>
+              <text font-size="12" font-weight="600" letter-spacing="3" fill="#00aaff" font-family="Inter,sans-serif">
+                <textPath href="#circlePath">DEVELOPER • BACKEND • DEVELOPER • BACKEND •</textPath>
+              </text>
+            </svg>
+            <div class="center-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+          </div>
 
-          if (random > 0.95) {
-            context.fillStyle = '#FFFFFF';
-          } else if (random > 0.75) {
-            context.fillStyle = '#00FF88';
-          } else {
-            context.fillStyle = `rgba(0, 180, 80, ${0.2 + Math.random() * 0.5})`;
-          }
+          <div class="photo-frame">
+            <span class="photo-badge" data-i18n="about.photo.badge">Perfil Profissional</span>
 
-          context.fillText(char, index * fontSize, drops[index] * fontSize);
+            <div class="photo-grid">
+              <div class="photo-card">
+                <img src="assets/foto-matheus.jpg" alt="Matheus Eduardo em seu ambiente de trabalho" data-i18n-alt="about.photo.alt">
+              </div>
+            </div>
 
-          if (drops[index] * fontSize > canvas.height && Math.random() > 0.975) {
-            drops[index] = 0;
-          }
+            <div class="photo-details">
+              <span class="photo-kicker" data-i18n="about.photo.kicker">Backend Developer</span>
+              <div class="photo-meta">
+                <strong data-i18n="about.photo.title">Construindo APIs, automações e bases de dados com foco em performance, segurança e código limpo.</strong>
+                <span data-i18n="about.photo.copy">Desenvolvimento backend em Python, modelagem de bancos relacionais, integrações com IA e arquitetura de soluções escaláveis para problemas reais.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          drops[index] += 0.6;
-        }
-      };
+    <!-- FORMAÇÃO ACADÊMICA -->
+    <div class="edu-section">
+      <div class="edu-section-header">
+        <span class="edu-section-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </span>
+        <span class="edu-section-title" data-i18n="education.title">Formação Acadêmica</span>
+      </div>
+      <div class="edu-cards">
 
-      resizeCanvas();
-      window.addEventListener('resize', resizeCanvas);
-      window.setInterval(drawMatrix, 40);
-    }
-  </script>
+        <div class="edu-card">
+          <div class="edu-card-logo has-bg">
+            <img src="assets/faculdade.png" alt="UNICIVE">
+          </div>
+          <div class="edu-card-body">
+            <span class="edu-card-course" data-i18n="education.card1.course">Análise e Desenvolvimento de Sistemas</span>
+            <span class="edu-card-school">UNICIVE</span>
+            <span class="edu-card-type" data-i18n="education.card1.type">Graduação · Em andamento · Conclusão prevista 2028</span>
+          </div>
+          <span class="edu-badge cursando" data-i18n="education.status.inProgress">Cursando</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projetos" class="content-section">
+  <div class="section-shell projects-shell">
+    <div class="section-head projects-head">
+      <span class="section-eyebrow" data-i18n="projects.eyebrow">Portfólio</span>
+      <h2 class="section-heading" data-i18n="projects.title">Projetos</h2>
+      <p class="section-copy" data-i18n="projects.copy">Projetos que desenvolvi aplicando na prática produto, experiência do usuário, arquitetura e tecnologia para criar soluções completas.</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+
+        <!-- Card 1 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.feature.label">Projeto 01</span>
+            <h3 class="carousel-card-title" data-i18n="projects.feature.title">Marvel × DC — site fullstack com IA</h3>
+            <p class="carousel-card-desc" data-i18n="projects.feature.desc">Site fullstack para explorar heróis da Marvel e DC. Busca em português e inglês, batalhas épicas com narração por IA e quiz de trivia gerado dinamicamente.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Claude API</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom/MARVELxDC" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.feature.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
+                <div class="project-stack-icon"><img src="https://www.anthropic.com/favicon.ico" alt="Claude API"><span>Claude API</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.second.label">Projeto 02</span>
+            <h3 class="carousel-card-title" data-i18n="projects.second.title">Modelo Preditivo de Crédito — IA para análise de score</h3>
+            <p class="carousel-card-desc" data-i18n="projects.second.desc">IA para previsão de score de crédito. Análise de dados com Pandas, treinamento de modelos com Scikit-learn (Random Forest com 83% de acurácia) e automação de previsões para novos clientes.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>IA</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom/automacao-python" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.second.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"><span>Scikit-learn</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"><span>NumPy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.third.label">Projeto 03</span>
+            <h3 class="carousel-card-title" data-i18n="projects.third.title">Servidor HTTP do Zero — backend sem mágica</h3>
+            <p class="carousel-card-desc" data-i18n="projects.third.desc">O navegador manda um pedido, meu código lê, processa e devolve a página. Sem mágica, sem abstração. Servidor HTTP construído do zero em Python puro.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>Sockets</span>
+              <span>HTTP</span>
+              <span>Backend</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom/http-server-python" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.third.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><span>Bash</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.fourth.label">Projeto 04</span>
+            <h3 class="carousel-card-title" data-i18n="projects.fourth.title">Mini Banco de Dados Chave-Valor — estilo SQLite</h3>
+            <p class="carousel-card-desc" data-i18n="projects.fourth.desc">Banco de dados chave-valor com formato binário próprio (cabeçalho MINIDB01) inspirado no SQLite. CLI interativa com indicador de alterações pendentes e interface web em Flask, ambas compartilhando o mesmo arquivo .db.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQLite-style</span>
+              <span>CLI</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom/minidb-python" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.fourth.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"><span>SQLite</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><span>Bash</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.fifth.label">Projeto 05</span>
+            <h3 class="carousel-card-title" data-i18n="projects.fifth.title">Automação de Tarefas e BOTS</h3>
+            <p class="carousel-card-desc" data-i18n="projects.fifth.desc">Scripts para automação de tarefas repetitivas, otimizando processos e aumentando produtividade no dia a dia.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>Automação</span>
+              <span>Scripts</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.fifth.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"><span>Selenium</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Scripts"><span>Scripts</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.sixth.label">Projeto 06</span>
+            <h3 class="carousel-card-title" data-i18n="projects.sixth.title">Bot TikTok — automação de engajamento</h3>
+            <p class="carousel-card-desc" data-i18n="projects.sixth.desc">Automação de curtidas no TikTok utilizando PyAutoGUI para simular interações e otimizar engajamento de forma automática.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>PyAutoGUI</span>
+              <span>Automação</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.sixth.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"><span>PyAutoGUI</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Scripts"><span>Scripts</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="carousel-card">
+          <div class="carousel-card-content">
+            <span class="carousel-card-label" data-i18n="projects.seventh.label">Projeto 07</span>
+            <h3 class="carousel-card-title" data-i18n="projects.seventh.title">Resumidor de Vídeos do YouTube com IA</h3>
+            <p class="carousel-card-desc" data-i18n="projects.seventh.desc">Você cola a URL do vídeo e recebe um resumo estruturado com pontos principais. Integração com Claude API para análise inteligente do conteúdo.</p>
+            <div class="carousel-card-techs">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Claude API</span>
+            </div>
+            <div class="carousel-card-actions">
+              <a class="carousel-card-btn" href="https://github.com/matheuseduardo04-dotcom" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                <span data-i18n="projects.seventh.ctaPrimary">Ver no GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-card-visual">
+            <div class="project-stack-display">
+              <div class="project-stack-grid">
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
+                <div class="project-stack-icon"><img src="https://www.anthropic.com/favicon.ico" alt="Claude API"><span>Claude API</span></div>
+                <div class="project-stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <!-- Navigation controls: arrow left + dots + arrow right -->
+      <div class="carousel-controls">
+        <button class="carousel-arrow carousel-arrow-left" id="carouselPrev" aria-label="Projeto anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots">
+          <button class="carousel-dot active" data-index="0" aria-label="Projeto 1"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Projeto 2"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Projeto 3"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Projeto 4"></button>
+          <button class="carousel-dot" data-index="4" aria-label="Projeto 5"></button>
+          <button class="carousel-dot" data-index="5" aria-label="Projeto 6"></button>
+          <button class="carousel-dot" data-index="6" aria-label="Projeto 7"></button>
+        </div>
+        <button class="carousel-arrow carousel-arrow-right" id="carouselNext" aria-label="Próximo projeto">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="curriculo" class="content-section">
+  <div class="section-shell" style="background:transparent;border:none;box-shadow:none;padding-top:60px;padding-bottom:20px;">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="cv.eyebrow">Currículo</span>
+      <h2 class="section-heading" data-i18n="cv.title">Meu currículo completo</h2>
+      <p class="section-copy" data-i18n="cv.copy">Histórico profissional, formação acadêmica e tecnologias dominadas em um só documento. Baixe ou visualize abaixo.</p>
+    </div>
+
+    <div class="cv-card">
+      <div class="cv-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </div>
+      <div class="cv-card-info">
+        <span class="cv-card-label" data-i18n="cv.label">Documento PDF</span>
+        <h3 class="cv-card-title">Matheus Eduardo — Backend Developer</h3>
+        <p class="cv-card-desc" data-i18n="cv.desc">Versão completa do currículo com experiências, projetos e stack técnica detalhada.</p>
+      </div>
+      <div class="cv-card-actions">
+        <a class="cv-btn cv-btn-primary" href="assets/curriculo.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span data-i18n="cv.download">Baixar PDF</span>
+        </a>
+        <a class="cv-btn cv-btn-secondary" href="assets/curriculo.pdf" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span data-i18n="cv.view">Visualizar</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="certificados" class="content-section">
+  <div class="section-shell" style="background:transparent;border:none;box-shadow:none;padding-top:40px;padding-bottom:0;">
+    <div class="section-head certs-head">
+      <span class="section-eyebrow" data-i18n="certs.eyebrow">Certificados</span>
+      <h2 class="section-heading" data-i18n="certs.title">Formação e conquistas</h2>
+      <p class="section-copy" data-i18n="certs.copy">Certificações que comprovam o aprendizado contínuo e o domínio das tecnologias que aplico nos projetos.</p>
+    </div>
+
+    <div class="cert-premium-wrapper">
+      <div class="cert-premium-card">
+        <div class="cert-premium-glow"></div>
+        <div class="cert-premium-shimmer"></div>
+        <div class="cert-premium-corner cert-corner-tl"></div>
+        <div class="cert-premium-corner cert-corner-tr"></div>
+        <div class="cert-premium-corner cert-corner-bl"></div>
+        <div class="cert-premium-corner cert-corner-br"></div>
+
+        <div class="cert-premium-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6"/>
+            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+          </svg>
+        </div>
+
+        <div class="cert-premium-badge-top">
+          <span class="cert-premium-badge-dot"></span>
+          <span data-i18n="certs.premium.status">Em conquista</span>
+        </div>
+
+        <h3 class="cert-premium-title" data-i18n="certs.premium.title">Python Certification</h3>
+        <div class="cert-premium-issuer-logo">
+          <img src="assets/freecodecamp-logo.png" alt="freeCodeCamp">
+        </div>
+        <p class="cert-premium-desc" data-i18n-html="certs.premium.desc">Certificação Python pela <strong>freeCodeCamp</strong> — a mais importante do meu plano de estudos. Ainda em progresso, mas o resultado vai valer cada hora investida.</p>
+
+        <div class="cert-premium-progress">
+          <div class="cert-premium-progress-bar">
+            <div class="cert-premium-progress-fill"></div>
+          </div>
+          <span class="cert-premium-progress-label" data-i18n="certs.premium.progress">Carregando conquista...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="content-section">
+  <div class="section-shell" style="background:transparent;border:none;box-shadow:none;padding-top:0;padding-bottom:40px;">
+    <div class="contact-new">
+
+      <div class="contact-new-head">
+        <span class="section-eyebrow" data-i18n="contact.eyebrow">Contato</span>
+        <h2 class="contact-new-title" data-i18n="contact.title2">Meus Contatos</h2>
+        <p class="contact-new-desc" data-i18n="contact.copy">Se quiser trocar ideia sobre desenvolvimento web, automações ou uma oportunidade profissional, fale comigo pelos canais abaixo.</p>
+      </div>
+
+      <div class="contact-new-list">
+        <a class="contact-new-item" href="mailto:matheus.eduardo04@icloud.com">
+          <div class="contact-new-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div class="contact-new-text">
+            <span class="contact-new-label" data-i18n="contact.label.email">Email</span>
+            <span class="contact-new-value">matheus.eduardo04@icloud.com</span>
+          </div>
+          <svg class="contact-new-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <a class="contact-new-item" href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0/" target="_blank">
+          <div class="contact-new-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-new-text">
+            <span class="contact-new-label">LinkedIn</span>
+            <span class="contact-new-value" data-i18n="contact.linkedin">Conexão profissional e networking</span>
+          </div>
+          <svg class="contact-new-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <a class="contact-new-item" href="https://github.com/matheuseduardo04-dotcom" target="_blank">
+          <div class="contact-new-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div class="contact-new-text">
+            <span class="contact-new-label">GitHub</span>
+            <span class="contact-new-value" data-i18n="contact.github">Projetos, estudos e repositórios</span>
+          </div>
+          <svg class="contact-new-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <div class="contact-new-item" style="cursor:default;">
+          <div class="contact-new-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-new-text">
+            <span class="contact-new-label" data-i18n="contact.label.location">Localização</span>
+            <span class="contact-new-value" data-i18n="contact.location.value">Londrina, PR — Brasil</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="contact-new-cta" href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0/" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <span data-i18n="contact.cta">Conectar</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp floating button -->
+<a
+  class="whatsapp-btn"
+  href="https://wa.me/5543996353642?text=Olá%20Matheus%2C%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar!"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+  </svg>
+  <span class="whatsapp-btn-label" data-i18n="whatsapp.label">Falar no WhatsApp</span>
+</a>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <div class="footer-icons">
+        <a href="https://github.com/matheuseduardo04-dotcom" target="_blank" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0/" target="_blank" aria-label="LinkedIn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <div class="footer-location">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="footer.location">Londrina, PR — Brasil</span>
+      </div>
+    </div>
+
+    <!-- Navegação -->
+    <div>
+      <div class="footer-col-title" data-i18n="footer.nav.title">Navegação</div>
+      <ul class="footer-nav">
+        <li><a href="#inicio" data-i18n="footer.nav.home">Início</a></li>
+        <li><a href="#sobre" data-i18n="footer.nav.about">Sobre mim</a></li>
+        <li><a href="#projetos" data-i18n="footer.nav.projects">Projetos</a></li>
+        <li><a href="#certificados" data-i18n="footer.nav.certs">Certificados</a></li>
+        <li><a href="#contato" data-i18n="footer.nav.contact">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div>
+      <div class="footer-col-title" data-i18n="footer.contact.title">Contato</div>
+      <div class="footer-contact-list">
+        <a class="footer-contact-item" href="mailto:matheus.eduardo04@icloud.com">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          matheus.eduardo04@icloud.com
+        </a>
+        <a class="footer-back-top" href="#inicio">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+          <span data-i18n="footer.backtop">Voltar ao topo</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 Matheus Eduardo · Todos os direitos reservados</span>
+  </div>
+</footer>
+
+<script src="javascript.js"></script>
 </body>
 </html>

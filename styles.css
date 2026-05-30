@@ -3848,6 +3848,42 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .cert-premium-caption {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #ffd700;
+    margin-bottom: 14px;
+  }
+  .cert-premium-image {
+    display: block;
+    margin: 0 auto 24px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1.5px solid rgba(255,215,0,0.35);
+    background: rgba(0,0,0,0.45);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45), 0 0 24px rgba(255,215,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .cert-premium-image:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,215,0,0.6);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.55), 0 0 32px rgba(255,215,0,0.25);
+  }
+  .cert-premium-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  html.light .cert-premium-caption { color: #b8860b; }
+  html.light .cert-premium-image {
+    border-color: rgba(184,134,11,0.45);
+    background: rgba(255,253,245,0.6);
+    box-shadow: 0 12px 32px rgba(184,134,11,0.18);
+  }
   .cert-premium-progress {
     display: flex;
     flex-direction: column;
